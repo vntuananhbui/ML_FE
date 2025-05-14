@@ -11,3 +11,5 @@ export type PredictionResult = {
   };
   message: string;
 };
+
+export type PredictionType = 'disease' | 'variety' | 'age' | 'all';
