@@ -16,6 +16,14 @@ export default defineConfig({
         allowedHosts: [
             'localhost',
             'ml-fe-zwvv.onrender.com'
-        ]
+        ],
+        proxy: {
+            '/api': {
+                target: 'https://ml-be-880p.onrender.com',
+                changeOrigin: true,
+                secure: true,
+                rewrite: (path) => path.replace(/^\/api/, '')
+            }
+        }
     },
 });

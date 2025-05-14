@@ -1,4 +1,4 @@
-const BASE_URL = "http://0.0.0.0:8000";
+const BASE_URL = "https://ml-be-880p.onrender.com";
 
 export async function predict(
   endpoint: "disease" | "variety" | "age",
