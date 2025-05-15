@@ -50,6 +50,9 @@ function ResultCard({
       </div>
       {/* Prediction info block */}
       <div className="w-full flex flex-col gap-4 px-6 pb-6 pt-2">
+        <div className="text-sm text-muted-foreground font-medium">
+            {file.name}
+          </div>
         {resultArr.map((result, j) => (
           <div
             key={j}
