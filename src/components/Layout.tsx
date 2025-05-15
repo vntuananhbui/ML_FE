@@ -11,7 +11,7 @@ export default function Layout({ children }: LayoutProps) {
       <header className="w-full py-4 shadow-sm bg-white dark:bg-zinc-900">
         <div className="container mx-auto flex items-center justify-between px-4">
           <span className="font-bold text-xl tracking-tight">
-            🌱 Plant Prediction
+            🌱 Paddy Plant Prediction | S3G2
           </span>
           {/* Optionally add a dark mode toggle here */}
         </div>
