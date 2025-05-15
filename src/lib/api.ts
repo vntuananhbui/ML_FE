@@ -1,4 +1,7 @@
-const BASE_URL = "http://127.0.0.1:8000";
+// Old backend URL
+// const BASE_URL = "https://ml-be-880p.onrender.com";
+// New backend URL from FastAPI docs
+const BASE_URL = "https://ml-be-880p.onrender.com";
 
 export async function predict(
   endpoint: "disease" | "variety" | "age",
