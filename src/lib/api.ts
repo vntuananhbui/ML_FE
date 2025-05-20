@@ -1,8 +1,9 @@
+// Use environment variable with fallback to local development URL
+const BASE_URL = import.meta.env.VITE_API_URL || "http://0.0.0.0:8000";
 // Old backend URL
 // const BASE_URL = "https://ml-be-880p.onrender.com";
 // New backend URL from FastAPI docs
-const BASE_URL = "https://ml-be-880p.onrender.com";
-
+// const BASE_URL = "https://ml-be-880p.onrender.com";
 export async function predict(
   endpoint: "disease" | "variety" | "age",
   file: File

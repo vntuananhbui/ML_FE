@@ -19,9 +19,9 @@ export default defineConfig({
         ],
         proxy: {
             '/api': {
-                target: 'https://ml-be-880p.onrender.com',
+                target: process.env.VITE_API_URL || 'http://0.0.0.0:8000',
                 changeOrigin: true,
-                secure: true,
+                secure: false, // Allow insecure connections for local development
                 rewrite: (path) => path.replace(/^\/api/, '')
             }
         }
